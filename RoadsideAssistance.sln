@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{89EA58EF-1247-439A-A5AC-235AEC3A3488}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7FD661D2-E37F-403D-9975-1EB28BBD9D6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{77CB08C0-ACB3-423E-A034-E9956830CF31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadsideAssistance.Api", "src\RoadsideAssistance.Api\RoadsideAssistance.Api.csproj", "{EE2F6036-FFAE-4B08-B6D9-194CE58D28A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadsideAssistance.Api.Test", "test\RoadsideAssistance.Api.Test\RoadsideAssistance.Api.Test.csproj", "{175FD1A4-4E1A-462C-AAEF-9A728A13ECA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{2C7E5DAB-CBD1-4A98-ABB2-C4EFA2BACA4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlScripts", "SqlScripts", "{7FC5E9DB-3D15-4C06-B4CD-E10BD3146ADD}"
+	ProjectSection(SolutionItems) = preProject
+		deployment\SqlScripts\Assistant_Test_Data.sql = deployment\SqlScripts\Assistant_Test_Data.sql
+		deployment\SqlScripts\Customer_Test_Data.sql = deployment\SqlScripts\Customer_Test_Data.sql
+		GeoLocations_Data_Insert_Scripts_VirginiaState.sql = GeoLocations_Data_Insert_Scripts_VirginiaState.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE2F6036-FFAE-4B08-B6D9-194CE58D28A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2F6036-FFAE-4B08-B6D9-194CE58D28A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2F6036-FFAE-4B08-B6D9-194CE58D28A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2F6036-FFAE-4B08-B6D9-194CE58D28A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175FD1A4-4E1A-462C-AAEF-9A728A13ECA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175FD1A4-4E1A-462C-AAEF-9A728A13ECA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175FD1A4-4E1A-462C-AAEF-9A728A13ECA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175FD1A4-4E1A-462C-AAEF-9A728A13ECA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE2F6036-FFAE-4B08-B6D9-194CE58D28A8} = {7FD661D2-E37F-403D-9975-1EB28BBD9D6D}
+		{175FD1A4-4E1A-462C-AAEF-9A728A13ECA5} = {77CB08C0-ACB3-423E-A034-E9956830CF31}
+		{7FC5E9DB-3D15-4C06-B4CD-E10BD3146ADD} = {2C7E5DAB-CBD1-4A98-ABB2-C4EFA2BACA4B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {886CFCAB-DBE8-49C3-BBFD-CCBAFF2092BC}
+	EndGlobalSection
+EndGlobal

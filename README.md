@@ -38,7 +38,7 @@
        - Address is treaded as field instead of enity. but can be seperated with state/country for effeciency filtering.
        
    - Customer and Table 
-       - Will have just one vehicle for now for each customer to limit the scope and should allow to reserve one Assistant at a time.
+       - Will have just one vehicle for now for each customer to limit the scope and allows to reserve one Active Assistant at any point of time.
        - Sql Insert Script for Customer Test Data available in '\deployment\SqlScripts\Customer_Test_Data.sql' 
        - Customer will always request for an Assistance with specific City Geo Location where the company supported/offered services city Geo Locations.
        - Validations are in place to restrict the input and allow valid locations. For now Just Virginia State All Cities Locations.
@@ -46,13 +46,13 @@
    - Assistant and Table
        - Asssitant Entity is treated as Transaction entity with limited details and to track the resevation.
        - Sql Insert Script for Assistant Test Data available in '\deployment\SqlScripts\Assistant_Test_Data.sql'  
-       - Mains current location of Assistant and also tracks whether Assistant is Reseved of not.
-       - Every time Assistant provides a service for customer for the requested location, Assistant Current Location will requires update with service requested Location.
-       - Assistant will update his Location once the Service Assisting work completed.
+       - Maintains current location of Assistant and also tracks whether Assistant is Reseved of not.
+       - Every time Assistant provides a service for customer for the requested location, Assistant Current Location will be updated with service requested Location.
+       - Assistant will update his Location explicitly by passing  update location request at any point of time or after Service Assisting work completed if needed.
    
    - CustomerAssistant and Table
-       - Will tracks the information about Customer, Assistant and status of work for each Aservice.
-       - Once Service is complated will track the completion date and status.
+       - Will tracks the information while Reserving and Assistance for Customer, Tracks Customer, Assistant and status of work for each Assistance Service.
+       - Once Customer Assisatnce is released, will updates the completion date and mark status as Completed.
    
    - Request/Response Models
        - Seperating Request/Response Models from Domian Enities will gives better controll for changes/versioning, have sepearated them in the code.
